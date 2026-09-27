@@ -1,235 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hari Krishna Kothapalli · Software Engineer</title>
-  <meta name="description" content="Hari Krishna Kothapalli is a Software Engineer at Nokia specializing in Java, microservices, cloud-native applications and Identity & Access Management (IAM/PAM).">
-  <meta property="og:title" content="Hari Krishna Kothapalli · Software Engineer">
-  <meta property="og:description" content="Software Engineer at Nokia building secure, scalable Java systems: core frameworks, microservices and Identity & Access Management.">
+  <meta name="description" content="Hari Krishna Kothapalli is a Software Engineer at Nokia building secure, scalable Java frameworks, microservices and Identity & Access Management (IAM/PAM) systems.">
+  <meta name="author" content="Hari Krishna Kothapalli">
+  <meta name="theme-color" content="#07080c">
+  <link rel="canonical" href="https://hari-256.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hari-256.github.io/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2360a5fa'/%3E%3Ctext x='50' y='64' font-size='44' font-family='Arial' font-weight='700' text-anchor='middle' fill='%230a0f1e'%3EHK%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Hari Krishna Kothapalli · Software Engineer">
+  <meta property="og:description" content="Software Engineer at Nokia building secure, scalable Java systems: core frameworks, microservices and Identity & Access Management.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238aa8ff'/%3E%3Cstop offset='.5' stop-color='%23b89cff'/%3E%3Cstop offset='1' stop-color='%23ff9ecd'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='32' fill='url(%23g)'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='24' font-weight='700' text-anchor='middle' fill='%230b0c10'%3EHK%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try { d.dataset.theme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+      setTimeout(function () { if (!window.__siteReady) d.classList.remove('js'); }, 3000);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Person", "name": "Hari Krishna Kothapalli", "jobTitle": "Software Engineer", "worksFor": {"@type": "Organization", "name": "Nokia"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "VIT Vellore"}, "address": {"@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN"}, "url": "https://hari-256.github.io/", "sameAs": ["https://www.linkedin.com/in/hari-krishna-kothapalli-96623919b/", "https://github.com/Hari-256"]}
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-review" viewBox="0 0 24 24"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><path d="M6 9v6"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+  </svg>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="noise"></div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="logo">HK<span>.</span></a>
-      <nav class="nav-links">
-        <a href="#about" class="hide-sm">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills" class="hide-sm">Skills</a>
-        <a href="#awards" class="hide-sm">Awards</a>
-        <a href="blog.html">Blog</a>
-        <a href="#contact" class="btn btn-small">Contact</a>
+    <div class="nav-inner">
+      <a href="#top" class="logo" aria-label="Hari Krishna Kothapalli, back to top"><span class="logo-mark">HK</span><span class="logo-name">Hari Krishna</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" data-spy>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
       </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark theme"><svg class="i moon"><use href="#i-moon"/></svg><svg class="i sun"><use href="#i-sun"/></svg></button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's talk</a>
+        <button class="icon-btn menu-btn" type="button" data-menu aria-label="Toggle menu" aria-expanded="false"><svg class="i open-i"><use href="#i-menu"/></svg><svg class="i close-i"><use href="#i-x"/></svg></button>
+      </div>
     </div>
   </header>
 
-  <main id="top">
-    <div class="container hero">
-      <div>
-        <p class="eyebrow">&gt; Software Engineer · Nokia · Bangalore, India</p>
-        <h1>Hi, I'm <span class="gradient">Hari Krishna Kothapalli</span>.</h1>
-        <p class="lead">I build secure, scalable Java systems: core framework components, microservices, and the Identity &amp; Access Management layers that decide who gets in and what they can do.</p>
-        <div class="cta">
-          <a href="blog.html" class="btn">Read my story &rarr;</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <a href="#experience" class="badge" data-reveal><span class="pulse"></span>Software Engineer at Nokia<span class="badge-dim">5+ years</span></a>
+            <h1 class="hero-title" data-reveal style="--d: 0.08s"><span class="line">Hari Krishna</span><span class="line"><span class="serif grad-text">Kothapalli</span></span></h1>
+            <p class="hero-sub" data-reveal style="--d: 0.16s">I build <span class="rotator" data-rotate='["core Java frameworks", "IAM &amp; RBAC layers", "cloud-native microservices", "secure REST APIs"]'>core Java frameworks</span></p>
+            <p class="hero-lead" data-reveal style="--d: 0.24s">Software engineer with 5 years at Nokia, designing high-performance Java frameworks, microservices and Identity &amp; Access Management systems that keep enterprise platforms fast, reliable and secure.</p>
+            <div class="hero-cta" data-reveal style="--d: 0.32s">
+              <a href="blog.html" class="btn btn-primary">Read my story <svg class="i"><use href="#i-arrow"/></svg></a>
+              <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            </div>
+            <div class="hero-meta" data-reveal style="--d: 0.4s">
+              <span><svg class="i"><use href="#i-pin"/></svg>Bangalore, India</span>
+              <span><svg class="i"><use href="#i-clock"/></svg><span data-clock>IST</span></span>
+            </div>
+          </div>
+
+          <div class="pass-wrap" data-reveal style="--d: 0.2s">
+            <div class="pass" data-tilt>
+              <div class="pass-sheen"></div>
+              <div class="pass-top">
+                <span class="chip-label"><span class="led"></span>ACCESS PASS</span>
+                <span class="pass-serial">ID · HK-0821</span>
+              </div>
+              <div class="pass-id">
+                <div class="avatar">HK</div>
+                <div><strong>Hari Krishna Kothapalli</strong><span>Software Engineer · Nokia</span></div>
+                <div class="smartchip" aria-hidden="true"></div>
+              </div>
+              <dl class="pass-rows">
+                <div><dt>Role</dt><dd>Software Engineer</dd></div>
+                <div><dt>Since</dt><dd>Aug 2021</dd></div>
+                <div><dt>Policy</dt><dd>Zero Trust</dd></div>
+                <div><dt>Base</dt><dd>Bangalore, IN</dd></div>
+              </dl>
+              <div class="pass-perms">
+                <span class="perm"><svg class="i"><use href="#i-check"/></svg>java.core</span>
+                <span class="perm"><svg class="i"><use href="#i-check"/></svg>iam.rbac</span>
+                <span class="perm"><svg class="i"><use href="#i-check"/></svg>pam.access</span>
+                <span class="perm"><svg class="i"><use href="#i-check"/></svg>cloud.k8s</span>
+                <span class="perm"><svg class="i"><use href="#i-check"/></svg>api.rest</span>
+              </div>
+              <div class="pass-foot">
+                <span class="granted"><svg class="i"><use href="#i-shield"/></svg>Access granted</span>
+                <span class="barcode" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul class="stats">
-          <li><strong>5+</strong><span>years at Nokia</span></li>
-          <li><strong>2</strong><span>company awards</span></li>
-          <li><strong>8.48</strong><span>CGPA at VIT</span></li>
-        </ul>
+
+        <div class="stats" data-reveal>
+          <div class="stat"><strong data-count="5" data-suffix="+">5+</strong><span>Years of experience</span></div>
+          <div class="stat"><strong data-count="2">2</strong><span>Nokia awards</span></div>
+          <div class="stat"><strong data-count="8.48">8.48</strong><span>CGPA at VIT</span></div>
+          <div class="stat"><strong data-count="3">3</strong><span>Languages spoken</span></div>
+        </div>
       </div>
-      <div class="code-card" aria-hidden="true">
-        <div class="code-card-bar"><i></i><i></i><i></i><span>HariKrishna.java</span></div>
-<pre><span class="k">public class</span> <span class="t">HariKrishna</span> <span class="k">extends</span> <span class="t">Engineer</span> {
+    </section>
 
-  <span class="t">String</span> role = <span class="s">"Software Engineer @ Nokia"</span>;
-  <span class="t">int</span> yearsOfExperience = <span class="n">5</span>;
-
-  <span class="t">List</span>&lt;<span class="t">String</span>&gt; focus = <span class="t">List</span>.of(
-    <span class="s">"Core Java"</span>, <span class="s">"Spring Boot"</span>,
-    <span class="s">"Microservices"</span>, <span class="s">"IAM / PAM"</span>,
-    <span class="s">"RBAC"</span>, <span class="s">"AWS &amp; Kubernetes"</span>
-  );
-
-  <span class="c">// security is a feature, not an afterthought</span>
-  <span class="k">boolean</span> zeroTrust = <span class="k">true</span>;
-}</pre>
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <span>Core Java</span><span>Spring Boot</span><span>Microservices</span><span>REST APIs</span><span>IAM</span><span>PAM</span><span>RBAC</span><span>Zero Trust</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>GitLab CI</span><span>MySQL</span><span>JUnit</span><span>Linux</span>
+        <span aria-hidden="true">Core Java</span><span aria-hidden="true">Spring Boot</span><span aria-hidden="true">Microservices</span><span aria-hidden="true">REST APIs</span><span aria-hidden="true">IAM</span><span aria-hidden="true">PAM</span><span aria-hidden="true">RBAC</span><span aria-hidden="true">Zero Trust</span><span aria-hidden="true">AWS</span><span aria-hidden="true">Docker</span><span aria-hidden="true">Kubernetes</span><span aria-hidden="true">Jenkins</span><span aria-hidden="true">GitLab CI</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">JUnit</span><span aria-hidden="true">Linux</span>
       </div>
     </div>
 
-    <section id="about">
+    <section class="section" id="about">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">01 · About me</p>
-          <h2>Engineering the foundation other teams build on</h2>
+          <div>
+            <p class="kicker" data-reveal><b>01</b> About</p>
+            <h2 class="title" data-reveal>Engineering the <span class="serif grad-text">foundation</span> other teams build on.</h2>
+          </div>
+          <p class="section-intro" data-reveal>Five years inside enterprise systems at Nokia, where performance, reliability and security are never optional.</p>
         </div>
-        <div class="about-text">
-          <p>I'm a Software Engineer with 5 years of experience in Java-based frameworks, microservices, cloud-native applications and Identity &amp; Access Management (IAM/PAM) architecture. At Nokia, I design, optimize and maintain core internal software infrastructure and the secure access-control components that protect it.</p>
-          <p>My day-to-day includes critical business logic written with advanced Java features, secure internal REST APIs, Role-Based Access Control (RBAC), and tracking tricky authentication and redirection issues down to their root cause. I work hands-on with Docker, Kubernetes, AWS, automation scripting, and Windows, Linux and RHEL servers.</p>
-          <p>I speak English (full professional), Telugu (native) and Hindi (professional working proficiency).</p>
-        </div>
-        <div class="grid-3">
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <div class="bento">
+          <article class="card b-about" data-reveal>
+            <div>
+              <p>I'm a software engineer specializing in <strong>Java-based frameworks, microservices and cloud-native applications</strong>, with deep hands-on experience in <strong>Identity &amp; Access Management (IAM/PAM)</strong> architecture.</p>
+              <p>At Nokia, I design, optimize and maintain core internal software infrastructure and the secure access-control components that protect it: critical business logic built on advanced Java, secure internal REST APIs, fine-grained RBAC, and tricky authentication and redirection issues solved through rigorous root-cause analysis.</p>
+            </div>
+            <div class="b-sign">
+              <div class="avatar sm">HK</div>
+              <div><strong>Hari Krishna Kothapalli</strong><span>Software Engineer · Nokia</span></div>
+            </div>
+          </article>
+          <article class="card b-loc" data-reveal style="--d: 0.08s">
+            <div class="radar" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+            <div class="loc-row">
+              <div><p class="mini">Based in</p><h3>Bangalore, India</h3></div>
+              <span class="clock" data-clock></span>
+            </div>
+          </article>
+          <article class="card b-lang" data-reveal style="--d: 0.16s">
+            <p class="mini">Languages</p>
+            <ul class="langs">
+              <li><div class="row">English<span>Full professional</span></div><div class="bar"><i style="--w: 95%"></i></div></li>
+              <li><div class="row">Telugu<span>Native</span></div><div class="bar"><i style="--w: 100%"></i></div></li>
+              <li><div class="row">Hindi<span>Professional working</span></div><div class="bar"><i style="--w: 75%"></i></div></li>
+            </ul>
+          </article>
+          <article class="card b-focus" data-reveal>
+            <div class="card-icon"><svg class="i"><use href="#i-layers"/></svg></div>
             <h3>Core Java &amp; Frameworks</h3>
-            <p>Modular, reusable, high-performance framework components in Core Java and Spring Boot, used across multiple product lines.</p>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <p>Modular, reusable, high-performance components in Core Java (JDK 8+) and Spring Boot, shared across multiple product lines.</p>
+          </article>
+          <article class="card b-focus" data-reveal style="--d: 0.08s">
+            <div class="card-icon"><svg class="i"><use href="#i-key"/></svg></div>
             <h3>Identity &amp; Access Security</h3>
-            <p>IAM governance, PAM, fine-grained RBAC, authentication and session redirection, all built on Zero Trust principles.</p>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+            <p>IAM governance, PAM, fine-grained RBAC and secure session redirection, designed around Zero Trust principles.</p>
+          </article>
+          <article class="card b-focus" data-reveal style="--d: 0.16s">
+            <div class="card-icon"><svg class="i"><use href="#i-cloud"/></svg></div>
             <h3>Cloud &amp; DevOps</h3>
-            <p>Docker, Kubernetes, AWS and CI/CD pipelines with Jenkins and GitLab, delivered in an Agile environment.</p>
-          </div>
+            <p>Docker, Kubernetes and AWS, shipped through CI/CD pipelines with Jenkins and GitLab in an Agile environment.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="experience">
+    <section class="section" id="experience">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">02 · Experience</p>
-          <h2>Where I've worked and studied</h2>
+          <div>
+            <p class="kicker" data-reveal><b>02</b> Experience</p>
+            <h2 class="title" data-reveal>Where I've <span class="serif grad-text">built</span> my craft.</h2>
+          </div>
+          <p class="section-intro" data-reveal>From a five-year integrated MTech to the core of Nokia's internal Java platform.</p>
         </div>
-        <div class="timeline">
-          <article class="card tl-item">
-            <div class="tl-head">
+        <div class="xp">
+          <article class="card xp-item" data-reveal>
+            <div class="xp-meta">
+              <span class="xp-date">Aug 2021 — Present</span>
               <h3>Software Engineer</h3>
-              <span class="tl-date">Aug 2021 &ndash; Present</span>
+              <p class="xp-org">Nokia · Bangalore, India</p>
+              <div class="tags"><span class="tag">Core Java</span><span class="tag">JDK 8+</span><span class="tag">Multithreading</span><span class="tag">REST APIs</span><span class="tag">IAM</span><span class="tag">RBAC</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span></div>
             </div>
-            <p class="tl-org">Nokia · Bangalore, India</p>
-            <ul class="highlights">
-              <li><strong>Core framework development:</strong> design and implement robust, scalable components in Nokia's core internal Java framework (Core Java, JDK 8), focused on modularity and reuse across product lines.</li>
-              <li><strong>IAM &amp; access governance:</strong> architect and enforce fine-grained IAM protocols and RBAC matrices across core internal applications to safeguard critical platform resources and user roles.</li>
-              <li><strong>Performance optimization:</strong> build and tune critical business logic and system services with advanced Java features such as multithreading, for high-volume internal systems.</li>
-              <li><strong>API management:</strong> implement and maintain internal APIs and libraries that keep communication between modules and external integrations consistent and secure.</li>
-              <li><strong>Defect resolution:</strong> troubleshoot complex framework issues, find root causes and ship timely fixes that prevent system outages.</li>
-              <li><strong>Collaboration &amp; quality:</strong> partner with product teams across Nokia verticals, run rigorous code reviews and author technical documentation for smooth onboarding.</li>
-              <li><strong>CI/CD:</strong> Git and GitHub branching workflows integrated with Jenkins and GitLab CI pipelines in an Agile setup.</li>
+            <ul class="xp-list">
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-layers"/></svg></div><h4>Core framework development</h4><p>Design and implement robust, scalable, high-performance components in Nokia's core internal Java framework, built for modularity and reuse across product lines.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-key"/></svg></div><h4>IAM &amp; access governance</h4><p>Architect and enforce fine-grained IAM protocols and RBAC matrices across core internal applications to safeguard critical platform resources and user roles.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-zap"/></svg></div><h4>Performance optimization</h4><p>Optimize critical business logic and system services with advanced Java features like multithreading for high-volume internal systems.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-plug"/></svg></div><h4>API management</h4><p>Implement and maintain internal APIs and libraries for consistent, secure communication between modules and external integrations.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-search"/></svg></div><h4>Defect &amp; issue resolution</h4><p>Troubleshoot complex framework defects, identify root causes and deploy timely fixes that prevent system outages.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-users"/></svg></div><h4>Cross-functional collaboration</h4><p>Partner with product teams across Nokia verticals to gather requirements and integrate framework capabilities into their applications.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-review"/></svg></div><h4>Code quality</h4><p>Run rigorous code reviews for new features and enhancements against coding standards, performance benchmarks and security guidelines.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-book"/></svg></div><h4>Technical documentation</h4><p>Author documentation and best practices for framework components, making onboarding and knowledge transfer smooth.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-branch"/></svg></div><h4>CI/CD integration</h4><p>Manage complex branches with Git and GitHub, integrated with Jenkins and GitLab CI pipelines in an Agile environment.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-shield"/></svg></div><h4>Security &amp; compliance</h4><p>Handle sensitive data with integrity and discretion, ensuring data privacy and strict adherence to security protocols.</p></li>
             </ul>
-            <div class="tags">
-              <span class="tag">Core Java</span><span class="tag">JDK 8+</span><span class="tag">Multithreading</span><span class="tag">REST APIs</span><span class="tag">IAM</span><span class="tag">RBAC</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span>
-            </div>
           </article>
-          <article class="card tl-item">
-            <div class="tl-head">
+          <article class="card xp-item" data-reveal>
+            <div class="xp-meta">
+              <span class="xp-date">2016 — 2021</span>
               <h3>MTech Integrated, Software Engineering</h3>
-              <span class="tl-date">2016 &ndash; 2021</span>
+              <p class="xp-org">VIT · Vellore, Tamil Nadu</p>
+              <div class="tags"><span class="tag">Software Engineering</span><span class="tag">OOP</span><span class="tag">DSA</span></div>
             </div>
-            <p class="tl-org">VIT · Vellore, Tamil Nadu</p>
-            <ul class="highlights">
-              <li><strong>CGPA 8.48 / 10</strong> in a five-year integrated program covering software engineering, object-oriented design, data structures and algorithms.</li>
+            <ul class="xp-list">
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-cap"/></svg></div><h4>CGPA 8.48 / 10</h4><p>Graduated from VIT's five-year integrated MTech program in Software Engineering.</p></li>
+              <li><div class="card-icon sm"><svg class="i"><use href="#i-code"/></svg></div><h4>Engineering foundations</h4><p>Software engineering practice, object-oriented design, data structures and algorithms.</p></li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="skills">
+    <section class="section" id="skills">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">03 · Skills</p>
-          <h2>My toolbox</h2>
-        </div>
-        <div class="grid-3">
-          <div class="card skill-group">
-            <h3>Programming</h3>
-            <div class="tags"><span class="tag">Core Java</span><span class="tag">JDK 8+</span><span class="tag">OOP</span><span class="tag">Spring Boot</span><span class="tag">DSA</span><span class="tag">Python (basic)</span></div>
+          <div>
+            <p class="kicker" data-reveal><b>03</b> Skills</p>
+            <h2 class="title" data-reveal>A toolbox for <span class="serif grad-text">secure</span>, scalable software.</h2>
           </div>
-          <div class="card skill-group">
-            <h3>Identity &amp; Access Security</h3>
+          <p class="section-intro" data-reveal>The languages, platforms and practices I reach for every day.</p>
+        </div>
+        <div class="skills">
+          <div class="card skill-card" data-reveal>
+            <h3><svg class="i"><use href="#i-code"/></svg>Programming</h3>
+            <div class="tags"><span class="tag">Core Java</span><span class="tag">JDK 8+</span><span class="tag">OOP</span><span class="tag">Spring Boot</span><span class="tag">Data Structures &amp; Algorithms</span><span class="tag">Python (basic)</span></div>
+          </div>
+          <div class="card skill-card" data-reveal style="--d: 0.06s">
+            <h3><svg class="i"><use href="#i-shield"/></svg>Identity &amp; Access</h3>
             <div class="tags"><span class="tag">IAM Governance</span><span class="tag">PAM</span><span class="tag">RBAC</span><span class="tag">Auth &amp; Session Redirection</span><span class="tag">Zero Trust</span></div>
           </div>
-          <div class="card skill-group">
-            <h3>Cloud &amp; Infrastructure</h3>
+          <div class="card skill-card" data-reveal style="--d: 0.12s">
+            <h3><svg class="i"><use href="#i-cloud"/></svg>Cloud &amp; Backend</h3>
             <div class="tags"><span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">REST APIs</span><span class="tag">MySQL</span></div>
           </div>
-          <div class="card skill-group">
-            <h3>DevOps &amp; Version Control</h3>
+          <div class="card skill-card" data-reveal>
+            <h3><svg class="i"><use href="#i-branch"/></svg>DevOps &amp; Version Control</h3>
             <div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">GitLab</span><span class="tag">Jenkins</span><span class="tag">JUnit</span></div>
           </div>
-          <div class="card skill-group">
-            <h3>Automation &amp; Platforms</h3>
-            <div class="tags"><span class="tag">Selenium</span><span class="tag">AutoIt</span><span class="tag">Windows</span><span class="tag">Linux</span><span class="tag">RHEL</span><span class="tag">RDP</span></div>
+          <div class="card skill-card" data-reveal style="--d: 0.06s">
+            <h3><svg class="i"><use href="#i-terminal"/></svg>Automation &amp; Platforms</h3>
+            <div class="tags"><span class="tag">Selenium</span><span class="tag">AutoIt</span><span class="tag">Windows</span><span class="tag">Linux</span><span class="tag">RHEL servers</span><span class="tag">RDP</span></div>
           </div>
-          <div class="card skill-group">
-            <h3>AI &amp; Dev Tools</h3>
+          <div class="card skill-card" data-reveal style="--d: 0.12s">
+            <h3><svg class="i"><use href="#i-sparkle"/></svg>AI &amp; Dev Tools</h3>
             <div class="tags"><span class="tag">Claude</span><span class="tag">Copilot</span><span class="tag">Cursor</span><span class="tag">IntelliJ</span><span class="tag">Eclipse</span><span class="tag">VS Code</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="awards">
+    <section class="section" id="awards">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">04 · Recognition</p>
-          <h2>Awards at Nokia</h2>
+          <div>
+            <p class="kicker" data-reveal><b>04</b> Recognition</p>
+            <h2 class="title" data-reveal>Recognized for <span class="serif grad-text">impact</span>.</h2>
+          </div>
+          <p class="section-intro" data-reveal>Awards from Nokia, each verifiable on Workhuman.</p>
         </div>
-        <div class="grid-2">
-          <div class="card award">
-            <p class="label">Nokia award</p>
+        <div class="awards">
+          <article class="card award" data-reveal>
+            <div class="medal"><svg class="i"><use href="#i-award"/></svg></div>
+            <p class="mini award-label">Nokia award</p>
             <h3>Excellent Support &amp; Development Award</h3>
             <p>Recognized at Nokia for excellence in both support and development work.</p>
-            <a href="https://cloud.workhuman.com/microsites/t/il/nsn/awards/178954244" target="_blank" rel="noopener">Verify award &rarr;</a>
-          </div>
-          <div class="card award">
-            <p class="label">Nokia award</p>
+            <a class="link" href="https://cloud.workhuman.com/microsites/t/il/nsn/awards/178954244" target="_blank" rel="noopener">Verify award <svg class="i"><use href="#i-out"/></svg></a>
+          </article>
+          <article class="card award" data-reveal style="--d: 0.08s">
+            <div class="medal"><svg class="i"><use href="#i-sparkle"/></svg></div>
+            <p class="mini award-label">Nokia award</p>
             <h3>Dedicated and Emerging Employee Award</h3>
             <p>Recognized at Nokia for dedication and growth as an emerging engineer.</p>
-            <a href="https://cloud.workhuman.com/microsites/t/il/nsn/awards/165929952" target="_blank" rel="noopener">Verify award &rarr;</a>
-          </div>
+            <a class="link" href="https://cloud.workhuman.com/microsites/t/il/nsn/awards/165929952" target="_blank" rel="noopener">Verify award <svg class="i"><use href="#i-out"/></svg></a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="blog">
+    <section class="section" id="blog">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">05 · Blog</p>
-          <h2>Latest writing</h2>
+          <div>
+            <p class="kicker" data-reveal><b>05</b> Writing</p>
+            <h2 class="title" data-reveal>Notes from the <span class="serif grad-text">field</span>.</h2>
+          </div>
+          <p class="section-intro" data-reveal>Reflections on engineering, security and building software that lasts.</p>
         </div>
-        <a href="blog.html" class="card post-card">
-          <p class="label">September 28, 2026 · 6 min read</p>
-          <h3>Five Years at Nokia: Lessons from Building Secure Java Frameworks</h3>
-          <p>How I went from an integrated MTech at VIT to building the core Java framework and access-control layers that teams across Nokia depend on, and the five lessons I learned along the way.</p>
-          <span class="more">Read the post &rarr;</span>
+        <a href="blog.html" class="card post" data-reveal>
+          <div class="post-art" aria-hidden="true">
+            <div class="art-inner">
+              <span class="art-chip">Essay · 01</span>
+              <div>
+                <div class="art-big">Five years,</div>
+                <p class="art-small">of building secure foundations at Nokia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-body">
+            <p class="post-meta"><span>Sep 28, 2026</span><span>6 min read</span><span>Career</span></p>
+            <h3>Five Years at Nokia: Lessons from Building Secure Java Frameworks</h3>
+            <p>How I went from an integrated MTech at VIT to building the core Java framework and access-control layers that teams across Nokia depend on, and the five lessons I learned along the way.</p>
+            <span class="read-more">Read the essay <svg class="i"><use href="#i-arrow"/></svg></span>
+          </div>
         </a>
       </div>
     </section>
 
-    <section id="contact">
+    <section class="section" id="contact">
       <div class="container">
-        <div class="contact">
-          <p class="eyebrow">06 · Contact</p>
-          <h2>Let's connect</h2>
+        <div class="contact" data-reveal>
+          <p class="kicker"><b>06</b> Contact</p>
+          <h2 class="title">Let's build something <span class="serif grad-text">secure</span> together.</h2>
           <p>Whether it's Java, identity security, cloud-native architecture or DevOps, I'm always happy to talk shop with fellow engineers.</p>
-          <div class="cta">
-            <a href="mailto:harikrishnakothapalli3@gmail.com" class="btn">Email me</a>
-            <a href="https://www.linkedin.com/in/hari-krishna-kothapalli" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/Hari-256" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <div class="contact-actions">
+            <a href="mailto:harikrishnakothapalli3@gmail.com" class="btn btn-primary"><svg class="i"><use href="#i-mail"/></svg>Email me</a>
+            <button type="button" class="btn btn-ghost" data-copy="harikrishnakothapalli3@gmail.com" data-toast="Email copied to clipboard"><svg class="i"><use href="#i-copy"/></svg>Copy email</button>
+          </div>
+          <div class="socials">
+            <a class="icon-btn" href="https://www.linkedin.com/in/hari-krishna-kothapalli-96623919b/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="i"><use href="#i-linkedin"/></svg></a>
+            <a class="icon-btn" href="https://github.com/Hari-256" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="i"><use href="#i-github"/></svg></a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container footer-inner">
-      <span>&copy; 2026 Hari Krishna Kothapalli</span>
-      <span>Built with HTML &amp; CSS · Hosted on GitHub Pages</span>
+      <span>&copy; <span data-year>2026</span> Hari Krishna Kothapalli</span>
+      <span>Designed &amp; built in Bangalore · Hosted on GitHub Pages</span>
+      <a href="#top" class="to-top">Back to top <svg class="i"><use href="#i-up"/></svg></a>
     </div>
   </footer>
+
+  <div class="toast" role="status" aria-live="polite"><svg class="i"><use href="#i-check"/></svg><span>Copied</span></div>
+
+  <script src="main.js" defer></script>
 </body>
 </html>

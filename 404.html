@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 · Access denied · Hari Krishna Kothapalli</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#07080c">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      try { d.dataset.theme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="noise"></div>
+  </div>
+  <main class="notfound container">
+    <p class="kicker"><b>404</b> Resource not found</p>
+    <h1 class="nf-title">Access <span class="serif grad-text">denied</span>.</h1>
+    <p class="nf-text">Not because of RBAC this time. The page you're looking for doesn't exist, or it has moved.</p>
+    <pre class="nf-log"><span class="prompt">$</span> authorize --resource "<span data-path>/unknown</span>"
+<span class="err">✗ 404 RESOURCE_NOT_FOUND</span> · policy: zero-trust</pre>
+    <div class="hero-cta">
+      <a href="/" class="btn btn-primary">Take me home</a>
+      <a href="/blog.html" class="btn btn-ghost">Read the blog</a>
+    </div>
+  </main>
+  <script src="/main.js" defer></script>
+</body>
+</html>
