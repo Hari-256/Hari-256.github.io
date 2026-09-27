@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Five Years at Nokia: Lessons from Building Secure Java Frameworks · Hari Krishna Kothapalli</title>
+  <meta name="description" content="Hari Krishna Kothapalli on his journey from VIT to Nokia, building core Java frameworks, IAM/RBAC access control, and the lessons learned along the way.">
+  <meta property="og:title" content="Five Years at Nokia: Lessons from Building Secure Java Frameworks">
+  <meta property="og:description" content="From an integrated MTech at VIT to core Java frameworks and Identity & Access Management at Nokia.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hari-256.github.io/blog.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2360a5fa'/%3E%3Ctext x='50' y='64' font-size='44' font-family='Arial' font-weight='700' text-anchor='middle' fill='%230a0f1e'%3EHK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">HK<span>.</span></a>
+      <nav class="nav-links">
+        <a href="index.html#about" class="hide-sm">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills" class="hide-sm">Skills</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="index.html#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="article">
+      <a href="index.html" class="back">&larr; Back to home</a>
+      <p class="article-meta">September 28, 2026 · 6 min read · Career</p>
+      <h1>Five Years at Nokia: Lessons from Building Secure Java Frameworks</h1>
+      <p class="lead">I went from a five-year integrated MTech at VIT to building the core Java framework and access-control layers that teams across Nokia depend on. This post covers that journey and what I learned along the way.</p>
+
+      <h2>The starting line</h2>
+      <p>I'm Hari Krishna Kothapalli, a Software Engineer based in Bangalore. My path into software started at VIT, Vellore, where I completed a five-year integrated MTech in Software Engineering (2016&ndash;2021) with a CGPA of 8.48. Those years gave me more than a degree. They taught me to treat software as <em>engineering</em>: object-oriented design, data structures and algorithms, and the discipline of building things that last.</p>
+      <p>In August 2021, I joined Nokia as a Software Engineer, and I've been there ever since.</p>
+
+      <h2>Building the foundation other teams stand on</h2>
+      <p>Most of my work lives inside Nokia's core internal Java framework, the shared layer that multiple product lines are built on. Framework work is a different kind of engineering. Your users are other engineers, and every design decision ripples outward into products you may never touch directly.</p>
+      <p>That changes how you write code. I focus heavily on modularity and reusability. Components should be easy to adopt, hard to misuse and stable across releases. A well-designed framework API helps product teams move faster. A poorly designed one costs everyone.</p>
+      <blockquote>A framework is a product whose customers are engineers. Treat its APIs like promises.</blockquote>
+
+      <h2>Security is a feature, not an afterthought</h2>
+      <p>A big part of my role is Identity &amp; Access Management. I design and enforce fine-grained IAM protocols and Role-Based Access Control (RBAC) matrices across core internal applications. The goal is that every user and service gets exactly the access it needs, and nothing more.</p>
+      <p>I've also spent a lot of time in the less glamorous corners of security: authentication flows, session handling and redirection logic. Some issues look like small redirect bugs on the surface but turn out to sit right on a trust boundary. Working through them taught me to think in terms of least privilege, Privileged Access Management (PAM) and Zero Trust: never assume a request is safe just because of where it came from.</p>
+
+      <h2>Making it fast, and keeping it stable</h2>
+      <p>The framework powers high-volume internal systems, so performance matters. I develop and optimize critical business logic using advanced Java features like multithreading. Concurrency is powerful but unforgiving. Shared state, race conditions and thread-safety issues don't always show up in testing. My rule of thumb is to measure first, keep shared state minimal, and make the concurrency model obvious to the next person who reads the code.</p>
+
+      <h2>Root cause over quick fixes</h2>
+      <p>When something breaks in a core framework, it rarely breaks in only one place. I chase complex defects down to the root cause instead of patching the symptom, and I ship fixes fast enough to prevent outages downstream. A good root-cause analysis doesn't just close a ticket. It prevents the next three.</p>
+
+      <h2>Engineering is a team sport</h2>
+      <p>Some of the most valuable work I do isn't code at all:</p>
+      <ul>
+        <li><strong>Collaboration:</strong> I partner with product teams across different Nokia verticals to understand their requirements and integrate framework capabilities into their applications.</li>
+        <li><strong>Code reviews:</strong> I review new features and enhancements for coding standards, performance and security. Quality gets built in reviews, and they're also where I learn the most.</li>
+        <li><strong>Documentation:</strong> I write technical documentation and best-practice guides so new engineers can onboard smoothly and knowledge doesn't live in one person's head.</li>
+        <li><strong>Delivery:</strong> I work in an Agile setup with Git, GitHub, Jenkins and GitLab CI pipelines, managing complex branches and keeping integration smooth.</li>
+      </ul>
+
+      <h2>My toolbox</h2>
+      <p>Day to day, I work with Core Java (JDK 8+), Spring Boot, REST APIs and MySQL. I deploy with Docker, Kubernetes and AWS across Windows, Linux and RHEL servers. For automation I use Python, Selenium and AutoIt, and I test with JUnit.</p>
+      <p>More recently, AI tools like Claude, GitHub Copilot and Cursor have become part of how I work. I use them to explore unfamiliar code, draft tests and speed up routine tasks. In fact, I built this website with help from an AI agent in Cursor. The design, the judgment and the responsibility for what ships still belong to the engineer, but the feedback loop is much faster.</p>
+
+      <h2>Recognition</h2>
+      <p>I'm grateful to have received two awards at Nokia:</p>
+      <ul>
+        <li><strong>Excellent Support &amp; Development Award</strong> (<a href="https://cloud.workhuman.com/microsites/t/il/nsn/awards/178954244" target="_blank" rel="noopener">verify</a>)</li>
+        <li><strong>Dedicated and Emerging Employee Award</strong> (<a href="https://cloud.workhuman.com/microsites/t/il/nsn/awards/165929952" target="_blank" rel="noopener">verify</a>)</li>
+      </ul>
+      <p>To me, they're a reminder that dependable support and consistent delivery matter as much as clever code.</p>
+
+      <h2>Five lessons from five years</h2>
+      <ol>
+        <li>Design APIs as if you'll have to support them forever. In a framework, you will.</li>
+        <li>Security belongs in the design review, not the post-mortem.</li>
+        <li>Measure before you optimize, especially with concurrency.</li>
+        <li>Fix the root cause, then write down what you learned.</li>
+        <li>Clear documentation and thoughtful code reviews extend your impact beyond your own keyboard.</li>
+      </ol>
+
+      <h2>What's next</h2>
+      <p>I want to go deeper into cloud-native architecture and identity security, where scalable systems and trustworthy access meet. If you're working on similar problems, or just want to talk Java, IAM or DevOps, I'd love to connect on <a href="https://www.linkedin.com/in/hari-krishna-kothapalli" target="_blank" rel="noopener">LinkedIn</a> or by <a href="mailto:harikrishnakothapalli3@gmail.com">email</a>.</p>
+
+      <div class="author">
+        <div class="avatar">HK</div>
+        <p><strong>Hari Krishna Kothapalli</strong>Software Engineer at Nokia · Java, Microservices, IAM/PAM</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Hari Krishna Kothapalli</span>
+      <span>Built with HTML &amp; CSS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>
